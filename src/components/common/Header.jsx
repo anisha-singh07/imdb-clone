@@ -19,7 +19,7 @@ import HeaderMenu from './HeaderMenu';
 
 //styled, Toolbar: materialUI
 const StyledToolBar = styled(Toolbar)`
-  background-color: black;
+  background-color: #121212;
   min-height: 5vw !important;
   padding: 0 3.5vw !important;
   justify-content: space-between;
@@ -76,7 +76,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar>
+    <AppBar position='static'>
       <StyledToolBar>
         <Logo src={logoURL} alt="IMDBlogo" />
         <Box onClick={handleClick}>
