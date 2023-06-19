@@ -1,7 +1,8 @@
 const APP_PATH = '/imdb'
 
-export const routhPath = {
-    home         : `${APP_PATH}/`,
+export const routePath = {
+    home         : ``,
     categories   : `${APP_PATH}/categories`,
+    details      : `movie/:id`,
     invalid      : `${APP_PATH}/*`
 }

@@ -1,21 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Home from './pages/Home';
-import CategoryMovies from './pages/CategoryMovies';
 
-import { routhPath } from './constants/route';
+
+import { routePath } from './constants/route';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MovieList from './components/MovieList/MovieList';
+import MovieDetails from './pages/details/MovieDetails'
 
 function App() {
   return (
-    <Router>
-      
+    <Router>  
       <Routes>
-          <Route path={routhPath.home} element={<Home />} />
-          <Route path={routhPath.categories} element={<CategoryMovies />} />
-          <Route path={routhPath.invalid} element={<Home />} />
+          <Route path={routePath.home} element={<Home />} />
+          <Route path={routePath.categories} element={<MovieList />} />
+          <Route path={routePath.details} element={<MovieDetails />} />
+          <Route path={routePath.invalid} element={<h2>Error Page</h2>} />
       </Routes>
     </Router>
   );

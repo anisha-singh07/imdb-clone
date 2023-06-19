@@ -19,7 +19,7 @@ import Banner from "../components/Banner";
 import UpNext from "../components/UpNext";
 import Slide from "../components/Slides";
 
-import { categoryMovies } from "../services/api";
+import { getCategoryMovies } from "../services/api";
 import { NOWPLAYING_API_URL } from "../constants/constant";
 
 import { Box, Typography, styled } from "@mui/material";
@@ -30,7 +30,7 @@ const Wrapper = styled(Box)`
 `;
 
 const Component = styled(Box)`
-  padding: 0 5vw;
+  padding: 0 7vw;
 `;
 const Title = styled(Typography)`
   color: white;
@@ -48,7 +48,7 @@ const Home = () => {
 
   useEffect(() => {
     const getData = async () => {
-      let response = await categoryMovies(NOWPLAYING_API_URL);
+      let response = await getCategoryMovies(NOWPLAYING_API_URL);
       setMovies(response.results);
     };
     getData();

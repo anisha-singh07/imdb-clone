@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const categoryMovies = async(API_URL) => {
+export const getCategoryMovies = async(API_URL) => {
     //error handling
     try {
         let response = await axios.get(API_URL);

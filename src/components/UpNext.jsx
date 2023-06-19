@@ -74,7 +74,7 @@ const UpNext = ({ movies }) => {
   return (
     <Component>
       <Typography>Up next</Typography>
-      {movies.splice(0, 3).map((movie) => (
+      {movies.splice(3, 3).map((movie) => (
         <Wrapper>
           <Poster
             src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}

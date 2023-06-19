@@ -7,7 +7,6 @@ import {
   Box,
   Typography,
   InputBase,
-  Fade,
   Button
 } from '@mui/material';
 import { logoURL } from '../../constants/constant';
