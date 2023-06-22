@@ -5,10 +5,6 @@ import { Box, Typography, styled } from "@mui/material";
 
 import { Link } from "react-router-dom";
 
-import { routePath } from "../constants/route";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {Star} from "@mui/icons-material"
 
 const responsive = {
@@ -71,7 +67,7 @@ const Banner = ({ movies }) => {
         draggable={false}
         showDots={false}
         infinite={true}
-        autoPlay={false}
+        autoPlay={true}
         autoPlaySpeed={2500}
         keyBoardControl={true}
         customTransition="transform 500ms ease-in-out"
