@@ -1,7 +1,7 @@
 
 # IMDb-Clone
 
-This project is an IMDB clone built using React, which provides a homepage somewhat similar to the IMDB website. It allows users to navigate through popular, top-rated, and upcoming movies. It uses _The Movie Database_ APIs to fetch movie details.
+This project is an IMDb clone built using React, which provides a homepage somewhat similar to the IMDb website. It allows users to navigate through popular, top-rated, and upcoming movies. It uses _The Movie Database_ APIs to fetch movie details.
 
 
 ## Features
@@ -30,8 +30,10 @@ To run the IMDB Clone project locally on your machine, follow these steps:
     ```bash
         npm start
     ```
-4. Open your browser and access the project at http://localhost:3000.
+4. Open your browser and access the project at http://localhost:3000/imdb-clone.
 
+
+### The live site can also be visited via : https://anisha-singh07.github.io/imdb-clone/
 
 ## Author
 

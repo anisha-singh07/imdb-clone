@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import { Box, Typography, styled } from "@mui/material";
+import { Typography, styled } from "@mui/material";
 
 const responsive = {
   desktop: {

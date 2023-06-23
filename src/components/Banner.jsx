@@ -5,7 +5,7 @@ import { Box, Typography, styled } from "@mui/material";
 
 import { Link } from "react-router-dom";
 
-import {Star} from "@mui/icons-material"
+import { Star } from "@mui/icons-material";
 
 const responsive = {
   desktop: {
@@ -90,12 +90,16 @@ const Banner = ({ movies }) => {
               <Title>{movie ? movie.original_title : ""}</Title>
 
               <MovieRuntime>
-                <Box style={{padding:"0 2vw"}}>{movie ? movie.release_date : ""}</Box>
+                <Box style={{ padding: "0 2vw" }}>
+                  {movie ? movie.release_date : ""}
+                </Box>
                 <Box>{movie ? movie.vote_average : ""}</Box>
-                <Star style={{paddingLeft:"0", height: "1.5vw"}}/>
+                <Star style={{ paddingLeft: "0", height: "1.5vw" }} />
               </MovieRuntime>
 
-              <MovieDescription>{movie ? movie.overview : ""}</MovieDescription>
+              <MovieDescription>
+                {movie ? movie.overview.slice(0, 200) + ".." : ""}
+              </MovieDescription>
             </BannerMain2>
           </BannerMain>
         ))}

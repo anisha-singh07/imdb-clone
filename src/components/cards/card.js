@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+
 //import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "./card.css";
-import { Star } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 const Cards = ({ movie }) => {
@@ -17,7 +16,7 @@ const Cards = ({ movie }) => {
           className="CardImage"
           src={`https://image.tmdb.org/t/p/original${
             movie ? movie.poster_path : ""
-          }`}
+          }`} alt="Card"
         />
         <div className="CardOverlay">
           <div className="CardTitle">{movie ? movie.original_title : ""}</div>
